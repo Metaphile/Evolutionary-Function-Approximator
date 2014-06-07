@@ -1,0 +1,42 @@
+body,
+input,
+select,
+textarea {
+  font: 13px sans-serif;
+}
+form {
+  margin: 13px 0;
+}
+main {
+  width: 1000px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.graph {
+  background: white;
+  box-shadow: inset 0 0 32px silver;
+  border: 1px solid black;
+  display: block;
+}
+.graph.target {
+  float: left;
+}
+.graph.candidate {
+  background: #dfdfdf;
+}
+.graph.candidate:first-child {
+  margin-top: 0;
+}
+.graph.candidate:last-child {
+  margin-bottom: 0;
+}
+.graph.candidate.selected {
+  background: white;
+  position: relative;
+  z-index: 999;
+}
