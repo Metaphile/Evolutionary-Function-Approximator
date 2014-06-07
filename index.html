@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Evolution.js</title>
+		
+		<link rel="stylesheet/less" href="style.less">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+		<script src="//code.jquery.com/jquery-latest.min.js"></script>
+		
+		<script src="util.js"></script>
+		<script src="brain.js"></script>
+		<script src="graph.js"></script>
+		
+		<script src="config.js"></script>
+		<script>var CONFIG = CONFIG || {}</script>
+		
+		<script src="main.js"></script>
+	</head>
+	<body>
+		
+		<main>
+			<div id="target-graph"></div>
+			<div id="candidate-graphs"></div>
+			
+			<form>
+				<p><label>Target: <code>function (x) { return <input id="target-func-body" size="64"> ; }</code></label></p>
+				
+				<p>Try these:</p>
+				
+				<ul id="sample-funcs">
+					<li><a href="#">3 * Math.pow(Math.E, -(Math.pow(x, 2) / (2 * Math.pow(1, 2)))) - 3/2</a></li>
+					<li><a href="#">x >= 0 ? 1 : 0</a>
+					<li><a href="#">Math.cos(2*x) + Math.sin(3*x)</a></li>
+				</ul>
+				
+				<p>
+					<label for="mutation-rate-number">Mutation Rate (per gene):</label>
+					<input id="mutation-rate-range" type="range" min="0" max="0.1" step="0.001" value="0.005" style="width: 100px; vertical-align: middle;">
+					<input id="mutation-rate-number" type="number" step="0.001" style="width: 4em;">
+				</p>
+				
+				<p><input id="do-button" type="button" value="Evolve"> <input id="step-button" type="button" value="Step"></p>
+			</form>
+		</main>
+		
+	</body>
+</html>
