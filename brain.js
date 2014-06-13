@@ -60,8 +60,9 @@ var BRAIN = (function () {
 		var self = this;
 		
 		self.weights = [];
+		var numConnections = numInputs*numHiddenNeurons + numHiddenNeurons*numOutputs;
 		var numBiases = numHiddenNeurons + numOutputs;
-		for (var i = 0; i < numInputs*numHiddenNeurons + numHiddenNeurons*numOutputs + numBiases; i++) {
+		for (var i = 0; i < numConnections + numBiases; i++) {
 			self.weights.push(Math.randRange(-1, 1));
 		}
 		
