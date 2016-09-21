@@ -1,6 +1,6 @@
 Evolution.js
 ============
 
-HTML5-based experiment to test feedforward neural networks and genetic algorithms.
+Watch feedforward networks approximate a function through trial and error.
 
 ![Screenshot](/screenshots/1.0.png)
