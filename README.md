@@ -1,6 +1,5 @@
-Evolution.js
-============
+# Evolutionary Function Approximator
 
 Watch feedforward networks approximate a function through trial and error.
 
-![Screenshot](/screenshots/1.0.png)
+![Screenshot](/screenshot.png)
